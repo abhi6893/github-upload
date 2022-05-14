@@ -1,0 +1,143 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Navigation Bar - Logo and Image */
+#logo {
+    margin: 12px 12px;    
+}
+
+#logo img {
+    height: 50px;
+    margin: -15px 0px;
+}
+
+/* Navigation Bar - List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+#navbar ul li {
+    /* color:  white; */
+    list-style: none;
+    font-style: 1.5rem;
+}
+
+#navbar ul li a {
+     color: white;
+     display: block;
+     padding: 5px 15px;
+     border-radius: 20px;
+     text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Home-Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('https://cdn.pixabay.com/photo/2017/01/30/13/49/pancakes-2020863_960_720.jpg') no-repeat center center/cover;
+    height: 70%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0.89;
+    z-index: -1;
+}
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Section Services Container */
+#services {
+    margin: 30px;
+    display: flex;
+}
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 1px 3px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+
+}
+#services .box img {
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    font-size: 0.9rem;
+}
+#services {}
+
+/* Utility Classes */
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+    padding: 12px;
+}
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    padding: 12px;
+}
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 15px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.center {
+    text-align: center;
+}
+
+
